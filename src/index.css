@@ -1,4 +1,1 @@
 @import "tailwindcss";
-body { @apply bg-mist text-ink antialiased; font-variant-numeric: tabular-nums; }
-canvas { touch-action: none; }
-@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
