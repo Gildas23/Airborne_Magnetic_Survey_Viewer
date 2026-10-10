@@ -1,12 +1,37 @@
 @import "tailwindcss";
 
+@theme {
+    --color-ink: #0b1e2d;
+    --color-panel: #102a3d;
+    --color-sea: #0e7490;
+    --color-mist: #eef2f5;
+    --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+:root {
+    color-scheme: light;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     @apply bg-mist text-ink antialiased;
     font-variant-numeric: tabular-nums;
+    min-height: 100vh;
 }
 
 canvas {
     touch-action: none;
+}
+
+input[type='range'] {
+    accent-color: var(--color-sea);
+}
+
+::selection {
+    background: rgba(14, 116, 144, 0.18);
 }
 
 @media (prefers-reduced-motion: reduce) {
